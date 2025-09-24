@@ -9,7 +9,7 @@ export const Navigation = () => {
     { name: "Home", path: "/" },
     { name: "Experience & Projects", path: "/experience" },
     // { name: "Projects", path: "/projects" },
-    { name: "Testimonials", path: "/testimonials" },
+    { name: "Testimonials & Awards", path: "/testimonials" },
   ];
 
   return (
