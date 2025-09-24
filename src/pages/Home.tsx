@@ -37,7 +37,7 @@ export const Home = () => {
                 size="lg"
                 className="text-lg px-8 bg-mocha-dark text-cream hover:bg-mocha hover:text-cream transition-colors"
                 onClick={() => {
-                  window.location.href = "/testimonials";
+                  window.location.href = "src/pages/Testimonials.tsx";
                 }}
               >
                 See Testimonials
