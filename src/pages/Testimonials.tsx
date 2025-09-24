@@ -86,7 +86,7 @@ export const Testimonials = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="font-serif text-5xl font-bold text-mocha mb-6">
-            Previous Employer Testimonials
+            Employer Testimonials & Awards
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Don't just take my word for it. Here's what my previous employers have to say about 
