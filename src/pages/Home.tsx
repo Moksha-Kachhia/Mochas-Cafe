@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { PlatformerGame } from "@/components/PlatformerGame";
 import { ArrowDown, Brain, Code, Coffee } from "lucide-react";
 import cafeHero from "@/assets/cafe-hero.jpg";
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -36,9 +38,7 @@ export const Home = () => {
               <Button
                 size="lg"
                 className="text-lg px-8 bg-mocha-dark text-cream hover:bg-mocha hover:text-cream transition-colors"
-                onClick={() => {
-                  path: "/testimonials";
-                }}
+               onClick={() => navigate("/testimonials")}
               >
                 See Testimonials
               </Button>
