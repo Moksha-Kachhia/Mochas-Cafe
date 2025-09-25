@@ -36,9 +36,18 @@ export const Navigation = () => {
               {item.name}
             </Link>
           ))}
-          <Button variant="outline" size="sm">
-            Contact Me
-          </Button>
+          <Button
+          variant="outline"
+          size="sm"
+          onClick={() => {
+            const footer = document.querySelector("footer");
+            if (footer) {
+              footer.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+        >
+          Contact Me
+        </Button>
         </div>
 
         {/* Mobile Hamburger */}

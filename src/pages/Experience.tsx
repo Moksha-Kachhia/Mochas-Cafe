@@ -23,7 +23,7 @@ export const Experience = () => {
       skills: ["Python", "Automation", "Tableau", "Chatbots", "NLP"]
     },
     {
-      title: "ML Research Intern – Synthetic Data",
+      title: "ML Software Engineer – Synthetic Data",
       company: "Chromatic Data",
       location: "Remote",
       period: "Jan 2025 – Mar 2025",
