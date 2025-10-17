@@ -89,6 +89,13 @@ export const Experience = () => {
 
   const projects = [
     {
+      name: "FocusFlow",
+      tech: ["Java", "XML", "Firebase", "Android Studio"],
+      period: "Oct 2025",
+      description:
+        "Built a full-stack web app to support neurodiverse learners through AI-powered study tools. Set up CI/CD pipeline with GitHub Actions and pre-commit hooks to automate testing and deployment"
+    },
+    {
       name: "Studylet",
       tech: ["React", "Node.js", "Firebase", "Stripe", "MongoDB"],
       period: "Aug 2025 – Present",
@@ -100,7 +107,7 @@ export const Experience = () => {
       tech: ["Java", "XML", "Firebase", "Android Studio"],
       period: "Oct 2024 – Dec 2024",
       description:
-        "Built full-stack Android app as Scrum Master in 6 weeks using Agile methodology. Implemented authentication flows with MVP architecture and modular design."
+        "Built a full-stack Android app as Scrum Master in 6 weeks using Agile methodology. Implemented authentication flows with MVP architecture and modular design."
     }
   ];
 
