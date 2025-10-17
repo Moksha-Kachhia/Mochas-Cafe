@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, MapPin, Award } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
 
 export const Experience = () => {
   const experiences = [
@@ -87,23 +87,6 @@ export const Experience = () => {
     }
   ];
 
-  const projects = [
-    {
-      name: "Studylet",
-      tech: ["React", "Node.js", "Firebase", "Stripe", "MongoDB"],
-      period: "Aug 2025 – Present",
-      description:
-        "Developing a study platform with modular back-end + cloud-integrated front-end, secure payments, and scalable database design. Implemented ML-driven personalized recommendations."
-    },
-    {
-      name: "PlanetZe App",
-      tech: ["Java", "XML", "Firebase", "Android Studio"],
-      period: "Oct 2024 – Dec 2024",
-      description:
-        "Built full-stack Android app as Scrum Master in 6 weeks using Agile methodology. Implemented authentication flows with MVP architecture and modular design."
-    }
-  ];
-
   const skills = [
     { category: "Languages", items: ["Python", "Java", "C", "C++", "SQL", "JavaScript", "TypeScript", "HTML/CSS", "Bash"] },
     { category: "Frameworks", items: ["React", "Node.js", "FastAPI", "TensorFlow", "PyTorch", "LangChain", "scikit-learn", "Pandas", "NumPy"] },
@@ -171,32 +154,6 @@ export const Experience = () => {
           </div>
         </section>
 
-        {/* Projects */}
-        <section className="mb-20">
-          <h2 className="font-serif text-3xl font-bold text-mocha mb-12 text-center">
-            Latest Projects
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {projects.map((proj, index) => (
-              <Card key={index} className="bg-card border-border/50">
-                <CardHeader>
-                  <CardTitle className="text-lg text-mocha">{proj.name}</CardTitle>
-                  <p className="text-sm text-muted-foreground">{proj.period}</p>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground mb-4">{proj.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {proj.tech.map((t) => (
-                      <Badge key={t} variant="secondary" className="bg-matcha/10 text-matcha hover:bg-matcha/20">
-                        {t}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
 
         {/* Skills */}
         <section className="mb-20">
