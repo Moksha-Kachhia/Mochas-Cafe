@@ -87,6 +87,30 @@ export const Experience = () => {
     }
   ];
 
+  const projects = [
+    {
+      name: "FocusFlow",
+      tech: ["Java", "XML", "Firebase", "Android Studio"],
+      period: "Oct 2025",
+      description:
+        "Built a full-stack web app to support neurodiverse learners through AI-powered study tools. Set up CI/CD pipeline with GitHub Actions and pre-commit hooks to automate testing and deployment"
+    },
+    {
+      name: "Studylet",
+      tech: ["React", "Node.js", "Firebase", "Stripe", "MongoDB"],
+      period: "Aug 2025 – Present",
+      description:
+        "Developing a study platform with modular back-end + cloud-integrated front-end, secure payments, and scalable database design. Implemented ML-driven personalized recommendations."
+    },
+    {
+      name: "PlanetZe App",
+      tech: ["Java", "XML", "Firebase", "Android Studio"],
+      period: "Oct 2024 – Dec 2024",
+      description:
+        "Built a full-stack Android app as Scrum Master in 6 weeks using Agile methodology. Implemented authentication flows with MVP architecture and modular design."
+    }
+  ];
+
   const skills = [
     { category: "Languages", items: ["Python", "Java", "C", "C++", "SQL", "JavaScript", "TypeScript", "HTML/CSS", "Bash"] },
     { category: "Frameworks", items: ["React", "Node.js", "FastAPI", "TensorFlow", "PyTorch", "LangChain", "scikit-learn", "Pandas", "NumPy"] },
