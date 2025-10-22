@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, FolderOpen} from "lucide-react";
 import { link } from "fs";
 import { useState } from "react";
 
@@ -19,7 +19,7 @@ export const Projects = () => {
         "AI-powered recommendation pipeline",
         "Cross-platform mobile app (React Native)"
       ],
-      category: ["Fintech", "Web App", "AI"]
+      category: ["Fintech", "Web App", "Mobile App", "AI", "Accessibility","Human-Centered Design"]
     },
     {
       name: "FocusFlow",
@@ -34,7 +34,7 @@ export const Projects = () => {
       ],
       devpost: "https://devpost.com/software/focus-flow-nr80uo",
       code: "https://github.com/Moksha-Kachhia/FocusFlow",
-      category: ["Productivity", "Web App", "AI"],
+      category: ["Productivity", "Web App", "AI", "Accessibility"],
     },
     {
       name: "Studylet",
@@ -63,10 +63,38 @@ export const Projects = () => {
       ],
       code: "https://github.com/Planetze-Group21/Android-App",
       category: ["Mobile App", "Sustainability"]
-    }
+    },
+    {
+    name: "Nest",
+    tech: ["Figma", "Google Forms", "Prototyping", "Usability Testing"],
+    period: "Sep – Dec 2025",
+    description:
+      "Collaborated in a team of six to design and evaluate an interactive system following user-centered design principles. Conducted interviews, gathered requirements, developed prototypes, and analyzed usability feedback.",
+    features: [
+      "User research through surveys, interviews, and direct observation",
+      "Persona creation and literature review to inform design decisions",
+      "Low- and high-fidelity prototyping in Figma",
+      "Usability testing and iteration based on user feedback"
+    ],
+    link: "https://drive.google.com/drive/folders/106BczMTHgWkAD1XunrrQOpUBiIbfKY8h?usp=share_link",
+    category: ["Human-Centered Design", "Accessibility",]
+  },
+  {
+    name: "Website Evaluation & Redesign",
+    tech: ["UI/UX Analysis", "Wayback Machine"],
+    period: "Oct 2025",
+    description:
+      "Analyzed and redesigned the LifeLabs Canada website to improve accessibility, consistency, and user flow. Evaluated patient and healthcare professional interfaces using Shneiderman’s Eight Golden Rules and historical design comparisons.",
+    features: [
+      "Heuristic evaluation with Shneiderman’s Eight Golden Rules",
+      "Comparison of archived and current interfaces using Wayback Machine",
+      "Low-fidelity redesign focusing on accessibility, visual hierarchy, and interaction clarity"    ],
+    link: "https://drive.google.com/drive/folders/15FEGh2KmP149tscQ3CKRm17bwcs05CDR?usp=share_link",
+    category: ["Accessibility", "Human-Centered Design"]
+  }
   ];
 
-  const categories = ["All", "Web App", "Fintech", "Mobile App", "Productivity", "Sustainability", "AI"];
+  const categories = ["All", "Web App", "Mobile App", "Human-Centered Design", "Fintech", "AI", "Productivity", "Sustainability","Accessibility"];
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredProjects =
@@ -202,6 +230,24 @@ export const Projects = () => {
                       >
                         <ExternalLink className="h-4 w-4 mr-2 group-hover/btn:scale-110 transition-transform" />
                         Devpost
+                      </a>
+                    </Button>
+                  )}
+                  {project.link && (
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      asChild
+                      className="flex-1 group/btn"
+                    >
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center"
+                      >
+                        <FolderOpen className="h-4 w-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+                        Google Drive
                       </a>
                     </Button>
                   )}
