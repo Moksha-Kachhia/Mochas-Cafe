@@ -19,7 +19,7 @@ export const Projects = () => {
         "AI-powered recommendation pipeline",
         "Cross-platform mobile app (React Native)"
       ],
-      category: ["Fintech", "Web App", "Mobile App", "AI", "Accessibility","Human-Centered Design"]
+      category: ["Fintech", "Web App", "Mobile App", "AI", "Accessibility"]
     },
     {
       name: "FocusFlow",
