@@ -52,7 +52,7 @@ export const ContactFooter = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4" />
-                <span className="text-sm">moksha dot kachhia at mail dot utoronto dot ca</span>
+                <span className="text-sm">moksha [dot] kachhia [at] mail [dot] utoronto [dot] ca</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4" />
@@ -104,7 +104,7 @@ export const ContactFooter = () => {
         
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center">
           <p className="text-primary-foreground/60 text-sm">
-            © 2024 Moksha Kachhia. Crafted with ☕ and 💚
+            © 2025 Moksha Kachhia. Crafted with ☕ and 💚
           </p>
         </div>
       </div>
