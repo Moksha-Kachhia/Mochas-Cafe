@@ -11,7 +11,7 @@ export const Projects = () => {
     {
       name: "PocketEquity",
       tech: ["React", "ReactNative", "AI", "Node.js"],
-      period: "May 2025 – Present",
+      period: "June. 2025 – Present",
       description:
         "Founding Engineer. Designing and shipping MVPs for investor dashboards and mobile apps using React/React Native. Integrating an AI recommendation pipeline to personalize suggestions and enable rapid feedback.",
       features: [
@@ -24,7 +24,7 @@ export const Projects = () => {
     {
       name: "FocusFlow",
       tech: ["React", "Tailwind", "CSS", "Flask", "Vercel", "Render", "GitHub Actions"],
-      period: "Oct 2025",
+      period: "Oct. 2025",
       description:
         "Built a full-stack web app to support neurodiverse learners through AI-powered study tools. Set up CI/CD pipeline with GitHub Actions and pre-commit hooks to automate testing and deployment.",
       features: [
@@ -39,7 +39,7 @@ export const Projects = () => {
     {
       name: "Studylet",
       tech: ["React", "Node.js", "Firebase", "Stripe", "MongoDB"],
-      period: "Aug 2025 – Present",
+      period: "Aug. 2025",
       description:
         "Developing a study platform with modular back-end + cloud-integrated front-end, secure payments, and scalable database design. Implemented ML-driven personalized recommendations.",
       features: [
@@ -53,7 +53,7 @@ export const Projects = () => {
     {
       name: "PlanetZe App",
       tech: ["Java", "XML", "Firebase", "Android Studio"],
-      period: "Oct 2024 – Dec 2024",
+      period: "Oct. 2024 – Dec. 2024",
       description:
         "Built a full-stack Android app as Scrum Master in 6 weeks using Agile methodology. Implemented authentication flows with MVP architecture and modular design.",
       features: [
@@ -67,7 +67,7 @@ export const Projects = () => {
     {
     name: "Nest",
     tech: ["Figma", "Google Forms", "Prototyping", "Usability Testing"],
-    period: "Sep – Dec 2025",
+    period: "Sept. – Dec. 2025",
     description:
       "Collaborated in a team of six to design and evaluate an interactive system following user-centered design principles. Conducted interviews, gathered requirements, developed prototypes, and analyzed usability feedback.",
     features: [
@@ -82,7 +82,7 @@ export const Projects = () => {
   {
     name: "Website Evaluation & Redesign",
     tech: ["UI/UX Analysis", "Wayback Machine"],
-    period: "Oct 2025",
+    period: "Oct. 2025",
     description:
       "Analyzed and redesigned the LifeLabs Canada website to improve accessibility, consistency, and user flow. Evaluated patient and healthcare professional interfaces using Shneiderman’s Eight Golden Rules and historical design comparisons.",
     features: [
@@ -91,10 +91,25 @@ export const Projects = () => {
       "Low-fidelity redesign focusing on accessibility, visual hierarchy, and interaction clarity"    ],
     link: "https://drive.google.com/drive/folders/15FEGh2KmP149tscQ3CKRm17bwcs05CDR?usp=share_link",
     category: ["Accessibility", "Human-Centered Design"]
-  }
+  },
+    {
+  name: "System Monitoring Tool",
+  tech: ["C", "Linux", "System Calls", "ANSI Escape Codes"],
+  period: "Jan. – Feb.  2026",
+  description:
+  "Developing a real-time system monitoring utility in C that reports CPU usage, memory utilization, and connected users using Linux kernel interfaces. Implements parsing of /proc files, sampling intervals, and terminal-based graphical plots using ANSI escape codes.",
+  features: [
+  "CPU & memory usage visualization",
+  "User session tracking via /proc and syscalls",
+  "Custom parsing without shell commands",
+  "Real-time terminal plotting with ANSI escape codes",
+  "Modular C design with no globals"
+  ],
+  category: ["Systems & Low-Level"],
+  },
   ];
 
-  const categories = ["All", "Web App", "Mobile App", "Human-Centered Design", "Fintech", "AI", "Productivity", "Sustainability","Accessibility"];
+  const categories = ["All", "Web App", "Mobile App", "Human-Centered Design", "Systems & Low-level", "Fintech", "AI", "Productivity", "Sustainability", "Accessibility"];
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredProjects =
