@@ -105,7 +105,7 @@ export const Projects = () => {
   "Real-time terminal plotting with ANSI escape codes",
   "Modular C design with no globals"
   ],
-  category: ["Systems & Low-Level"],
+  category: ["Systems & Low-level"],
   },
   ];
 
