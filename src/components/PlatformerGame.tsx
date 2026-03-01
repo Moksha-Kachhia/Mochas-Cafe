@@ -64,6 +64,8 @@ export const PlatformerGame = () => {
     const OBSTACLE_HEIGHT = 40 * (canvas.height / 300);
 
     let lastObstacle = Date.now();
+    // next interval in ms; start with a random delay
+    let nextObstacleInterval = 1500 + Math.random() * 1500; // 1.5–3s
 
     const loop = () => {
       const state = gameStateRef.current;
@@ -118,22 +120,23 @@ export const PlatformerGame = () => {
         PLAYER_SIZE * 0.55
       );
 
-      // Handle (right side, mirrored)
+      // Handle (left side)
       ctx.beginPath();
       ctx.arc(
-        cupX + PLAYER_SIZE * 1.05,      // center x
+        cupX - PLAYER_SIZE * 0.05,      // center x just left of cup
         cupY + PLAYER_SIZE / 2,         // center y
         PLAYER_SIZE * 0.27,             // radius
-        -Math.PI / 2,
-        Math.PI / 2
+        Math.PI / 2,                    // start at bottom
+        -Math.PI / 2,                   // end at top
+        false                          // draw anticlockwise to get left-facing semicircle
       );
       ctx.lineWidth = 4;
       ctx.strokeStyle = "#e0e0e0";
       ctx.stroke();
       ctx.closePath();
 
-      // Add obstacles
-      if (Date.now() - lastObstacle > 2000) {
+      // Add obstacles with variable timing
+      if (Date.now() - lastObstacle > nextObstacleInterval) {
         state.obstacles.push({
           x: canvas.width,
           y: canvas.height - GROUND_HEIGHT - OBSTACLE_HEIGHT,
@@ -141,6 +144,8 @@ export const PlatformerGame = () => {
           height: OBSTACLE_HEIGHT,
         });
         lastObstacle = Date.now();
+        // choose next interval between 1.0 and 3.0 seconds
+        nextObstacleInterval = 1000 + Math.random() * 2000;
       }
 
       // Update obstacles
