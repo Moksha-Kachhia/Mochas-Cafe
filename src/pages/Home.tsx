@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { PlatformerGame } from "@/components/PlatformerGame";
 import { ArrowDown, Brain, Code, Coffee } from "lucide-react";
-import cafeHero from "@/assets/cafe-hero.jpg";
+import cafeHero from "@/assets/cafe.jpg";
 import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
@@ -20,7 +20,7 @@ export const Home = () => {
         <div className="relative z-10 text-center text-primary-foreground px-4 max-w-4xl mx-auto">
           <div className="inline-block w-full md:w-auto rounded-xl shadow-lg px-8 py-10"
             style={{
-              background: "rgba(255, 255, 255, 0.7)", // translucent white
+              background: "rgba(255, 255, 255, 0.8)", // translucent white
               border: "2px solid rgba(139, 69, 19, 0.15)", // subtle mocha border
               backdropFilter: "blur(2px)",
             }}

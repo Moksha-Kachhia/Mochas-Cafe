@@ -193,16 +193,8 @@ export const Experience = () => {
                 <CardContent>
                   <div className="space-y-2">
                     {skillGroup.items.map((skill) => (
-                      <div key={skill} className="flex items-center justify-between">
+                      <div key={skill} className="flex items-center">
                         <span className="text-sm text-muted-foreground">{skill}</span>
-                        <div className="flex space-x-1">
-                          {[...Array(5)].map((_, i) => (
-                            <div
-                              key={i}
-                              className={`w-2 h-2 rounded-full ${i < 4 ? "bg-matcha" : "bg-border"}`}
-                            />
-                          ))}
-                        </div>
                       </div>
                     ))}
                   </div>
