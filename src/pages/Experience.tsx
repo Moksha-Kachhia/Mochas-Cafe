@@ -14,7 +14,7 @@ export const Experience = () => {
       skills: ["AI/ML", "Deep Learning", "NLP", "Research"]
     },
     {
-      title: "Automation Engineer Co-op",
+      title: "Software Engineer Co-op",
       company: "RBC Borealis – Tableau / AI & Data",
       location: "Toronto, ON",
       period: "Jan 2025 – Aug 2025",
