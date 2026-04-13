@@ -35,9 +35,9 @@ export const Experience = () => {
       title: "Technology Director / Co-President",
       company: "Web3.0 UofT Student Group",
       location: "Toronto, ON",
-      period: "May 2024 – Present",
+      period: "May 2024 – Apr 2026",
       description:
-        "Led a cross-functional team to build a Firebase + React event portal and data dashboards for 200+ active users. Delivered technical workshops on ML, Python, and full-stack development for 50+ students.",
+        "As co-president, I hired and organzied a team of 25+ executive members across 5 departments, I facilitated hackathon planning and execution as well as financial budgeting and conflict resolution. As technology director, I led a cross-functional team to build a Firebase + React event portal and data dashboards for 200+ active users, I also delivered technical workshops on ML, Python, and full-stack development for 50+ students.",
       skills: ["React", "Firebase", "Team Leadership", "Workshops"]
     },
     {
