@@ -28,8 +28,8 @@ export const Experience = () => {
       location: "Remote",
       period: "Jan 2025 – Mar 2025",
       description:
-        "Engineered synthetic datasets using GANs and statistical sampling to preserve fidelity while enabling model generalization. Benchmarked ML model accuracy on synthetic vs. real datasets, achieving >90% similarity in predictive performance.",
-      skills: ["GANs", "Synthetic Data", "Machine Learning", "Python"]
+        "Developed and containerized AWS-based synthetic data pipelines (Docker), deploying scalable systems for high-volume data generation. Integrated API endpoints enabling secure data access for simulation tools",
+      skills: ["Synthetic Data", "Python", "Docker", "AWS"]
     },
     {
       title: "Technology Director / Co-President",
@@ -65,7 +65,7 @@ export const Experience = () => {
       period: "Mar 2024 – Present",
       description:
         "Delivered high-quality Python and JavaScript programs with a focus on troubleshooting, debugging, and ML integration. Earned performance bonuses for efficient delivery.",
-      skills: ["Python", "JavaScript", "C++", "ML", "Debugging"]
+      skills: ["Python", "JavaScript", "C++", "ML", "Debugging", "Data Annotation", "Model Assesment"]
     },
     {
       title: "Technological Innovation Analyst (AI, Software, DevOps)",
