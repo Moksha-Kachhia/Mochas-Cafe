@@ -93,15 +93,15 @@ export const Projects = () => {
     category: ["Accessibility", "Human-Centered Design"]
   },
     {
-  name: "System Monitoring Tool",
-  tech: ["C", "Linux", "System Calls", "ANSI Escape Codes"],
-  period: "Jan. – Feb.  2026",
+  name: "Concurrent System Monitoring Tool",
+  tech: ["C", "Linux", "System Calls", "ANSI Escape Codes", "Concurrency", "Signal Handling"],
+  period: "Mar. 2026",
   description:
-  "Developing a real-time system monitoring utility in C that reports CPU usage, memory utilization, and connected users using Linux kernel interfaces. Implements parsing of /proc files, sampling intervals, and terminal-based graphical plots using ANSI escape codes.",
+  "Developed a real-time system monitoring utility in C that reports CPU usage, memory utilization, and connected users concurrently using Linux kernel interfaces. Implements parsing of /proc files, sampling intervals, and terminal-based graphical plots using ANSI escape codes.",
   features: [
   "CPU & memory usage visualization",
   "User session tracking via /proc and syscalls",
-  "Custom parsing without shell commands",
+  "Custom parsing",
   "Real-time terminal plotting with ANSI escape codes",
   "Modular C design with no globals"
   ],
