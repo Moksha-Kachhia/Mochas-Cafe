@@ -23,12 +23,13 @@ export const Projects = () => {
     },
     {
       name: "FocusFlow",
-      tech: ["React", "Tailwind", "CSS", "Flask", "Vercel", "Render", "GitHub Actions"],
+      tech: ["React", "Flask", "Tailwind CSS", "Vercel", "Render", "GitHub Actions", "Gemini"],
       period: "Oct. 2025",
       description:
-        "Built a full-stack web app to support neurodiverse learners through AI-powered study tools. Set up CI/CD pipeline with GitHub Actions and pre-commit hooks to automate testing and deployment.",
+        "Developed a full-stack AI application using React, Flask, Firebase, and Gemini API, integrating speech processing, backend APIs, and automated CI/CD workflows to deliver an accessible learning platform.",
       features: [
-        "AI-based task prioritization",
+        "AI-based task prioritization powered by Gemini API",
+        "Speech processing for accessible interactions",
         "Firebase authentication and sync",
         "CI/CD automation with GitHub Actions"
       ],
@@ -52,14 +53,15 @@ export const Projects = () => {
     },
     {
       name: "PlanetZe App",
-      tech: ["Java", "XML", "Firebase", "Android Studio"],
+      tech: ["Kotlin", "Java", "Firebase", "Android Studio", "SOLID Design"],
       period: "Oct. 2024 – Dec. 2024",
       description:
-        "Built a full-stack Android app as Scrum Master in 6 weeks using Agile methodology. Implemented authentication flows with MVP architecture and modular design.",
+        "Led a 6-person team as Scrum Master to design and launch an Android app using Agile sprints, implementing JUnit testing and continuous integration while coordinating user feedback and feature priorities.",
       features: [
         "Firebase login system",
-        "Agile 6-week development sprint",
-        "Modular MVP architecture"
+        "JUnit testing and continuous integration",
+        "Agile sprint planning as Scrum Master",
+        "SOLID design principles for modular architecture"
       ],
       code: "https://github.com/Planetze-Group21/Android-App",
       category: ["Mobile App", "Sustainability"]
@@ -92,6 +94,34 @@ export const Projects = () => {
     link: "https://drive.google.com/drive/folders/15FEGh2KmP149tscQ3CKRm17bwcs05CDR?usp=share_link",
     category: ["Accessibility", "Human-Centered Design"]
   },
+    {
+      name: "Multiplayer Online Battleship Server (MOAB)",
+      tech: ["C", "POSIX", "TCP/IP", "Sockets", "select()", "Linux"],
+      period: "Aug. 2026",
+      description:
+        "Built an event-driven multiplayer TCP server in C, tested with 250+ concurrent clients, using select()-based I/O multiplexing, non-blocking sockets, and a custom application-layer protocol.",
+      features: [
+        "select()-based I/O multiplexing across 250+ concurrent clients",
+        "Non-blocking sockets with a custom application-layer protocol",
+        "Buffered socket I/O and connection management",
+        "Asynchronous state sync and real-time event broadcasting"
+      ],
+      category: ["Systems & Low-level"]
+    },
+    {
+      name: "ARM32 Compiler & Toolchain",
+      tech: ["Python", "ARM32 Assembly", "Computer Architecture"],
+      period: "Jun. 2026 – Aug. 2026",
+      description:
+        "Built a compiler and ARM32 assembler for a restricted C language, implementing recursive type checking, symbol tables, ARM32 code generation, label resolution, recursion, register preservation, and memory-mapped I/O.",
+      features: [
+        "Recursive type checking and symbol table management",
+        "ARM32 code generation and two-pass label resolution",
+        "Recursive procedures with register preservation",
+        "Memory-mapped I/O support"
+      ],
+      category: ["Systems & Low-level"]
+    },
     {
   name: "Concurrent System Monitoring Tool",
   tech: ["C", "Linux", "System Calls", "ANSI Escape Codes", "Concurrency", "Signal Handling"],
